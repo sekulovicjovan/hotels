@@ -1,0 +1,15 @@
+
+ <div class="row rowcols-4">
+  <div class="col" *ngFor="let e of rooms">
+    <div class="card">
+      <img src="{{e.img}}" class="card-img-top" >
+    <div class="card-body">
+      <h5 class="card-title">{{e.title}}</h5>
+
+      <a href="#" class="btn btn-primary">${{e.price}}</a>
+      <a href="#" class="btn btn-danger" (click)="onDelete(e)">Delete</a>
+    </div>
+    </div>
+  </div>
+ </div>
+
