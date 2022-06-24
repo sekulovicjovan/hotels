@@ -37,4 +37,9 @@ const room : Room = {
 
 this.roomService.getRoom(room);
 }
+onAdd(canAdd : boolean){
+if (canAdd) {
+  this.onSubmit();
+}
+}
 }
