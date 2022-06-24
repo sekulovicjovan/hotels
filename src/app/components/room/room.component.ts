@@ -26,5 +26,8 @@ rooms: Room[];
     }
 
   }
+  onUpdateRoom(room : Room){
+    this.roomService.updateRoom(room)
+  }
 
 }

@@ -32,6 +32,21 @@ this.rooms.forEach((curr, i) =>{
   }
 })
 }
+updateRoom(room : Room){
+  this.rooms.forEach((curr, i) =>{
+    if (room.id == curr.id) {
+      this.rooms.splice(i, 1);
+
+    }
+  });
+
+room.title = 'Room ' + this.getRandomInt (10, 20);
+room.price = this.getRandomInt (50, 150);
+this.rooms.unshift(room);
+}
+getRandomInt(min : number, max : number){
+return Math.floor(Math.random() * (max - min) +min );
+}
 
 
 }

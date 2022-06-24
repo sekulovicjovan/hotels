@@ -6,8 +6,9 @@
     <div class="card-body">
       <h5 class="card-title">{{e.title}}</h5>
 
-      <a href="#" class="btn btn-primary">${{e.price}}</a>
+      <a href="#" class="btn btn-primary">{{e.price | currency : 'EUR'}}</a>
       <a href="#" class="btn btn-danger" (click)="onDelete(e)">Delete</a>
+      <a href="#" class="btn btn-outline-primary" (click)="onUpdateRoom(e)">Change</a>
     </div>
     </div>
   </div>
